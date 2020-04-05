@@ -17,7 +17,7 @@ var ReviewSchema = new Schema({
 });
 
 
-Arrays.asList(lookup("movies", "movieID", "_id_", "movie"));
+
 
 // return the model
 module.exports = mongoose.model('Review', ReviewSchema);
