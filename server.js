@@ -5,6 +5,7 @@ var passport = require('passport');
 var authJwtController = require('./auth_jwt');
 var User = require('./Users');
 var Movie = require('./Movies');
+var Review = require('./Reviews');
 var jwt = require('jsonwebtoken');
 var cors = require('cors');
 
@@ -69,6 +70,27 @@ router.route('/movies')
             if (err) res.send(err);
             // return the movies
             res.json(movies);
+        });
+    });
+
+router.route('/reviews/:reviewId')
+    .get(authJwtController.isAuthenticated, function (req, res) {
+        var id = req.params.reviewId;
+        Review.findById(id, function(err, review) {
+            if (err) res.send(err);
+
+            var reviewJson = JSON.stringify(review);
+            // return that review
+            res.json(review);
+        });
+    });
+
+router.route('/reviews')
+    .get(authJwtController.isAuthenticated, function (req, res) {
+        Review.find(function (err, reviews) {
+            if (err) res.send(err);
+            // return the reviews
+            res.json(reviews);
         });
     });
 
