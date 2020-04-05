@@ -16,5 +16,8 @@ var ReviewSchema = new Schema({
     rating: { type: Number, required: true }
 });
 
+
+Arrays.asList(lookup("movies", "movieID", "_id_", "movie"));
+
 // return the model
 module.exports = mongoose.model('Review', ReviewSchema);

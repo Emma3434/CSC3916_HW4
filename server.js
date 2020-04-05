@@ -19,6 +19,9 @@ app.use(passport.initialize());
 
 var router = express.Router();
 
+
+
+
 router.route('/postjwt')
     .post(authJwtController.isAuthenticated, function (req, res) {
             console.log(req.body);
@@ -209,8 +212,8 @@ router.post('/reviews', authJwtController.isAuthenticated, function(req,res)
         /*
         review.reviewerID = req.body.userID;
         review.movieID = req.body.movieID;
-
          */
+
         review.reviewerID = 'req.body.userID';
         review.movieID = 'req.body.movieID';
         review.comment = req.body.comment;
