@@ -191,7 +191,7 @@ router.delete('/movies', authJwtController.isAuthenticated, function(req,res)
 });
 
 // reviews routes
-router.get('/movies', authJwtController.isAuthenticated, function(req,res)
+router.get('/reviews', authJwtController.isAuthenticated, function(req,res)
 {
     if (req.body.review === true)
     {
