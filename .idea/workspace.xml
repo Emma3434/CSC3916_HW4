@@ -96,7 +96,7 @@
       <workItem from="1551740823482" duration="7355000" />
       <workItem from="1552144308160" duration="1000" />
       <workItem from="1583365197285" duration="2397000" />
-      <workItem from="1586049292126" duration="1941000" />
+      <workItem from="1586049292126" duration="2194000" />
     </task>
     <servers />
   </component>
@@ -136,17 +136,5 @@
     <state width="1260" height="109" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585873191157" />
     <state width="1259" height="223" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1583367584852" />
     <state width="1659" height="230" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1583365605027" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server.js</url>
-          <line>75</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

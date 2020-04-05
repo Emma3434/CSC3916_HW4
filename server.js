@@ -222,7 +222,7 @@ router.post('/reviews', authJwtController.isAuthenticated, function(req,res)
                     return res.send(err);
             }
 
-            res.json({ success: true, message: 'review created!', movie: movie, review: review });
+            res.json({ success: true, message: 'review created!', review: review });
         });
     }
 });
