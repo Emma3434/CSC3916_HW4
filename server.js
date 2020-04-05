@@ -220,8 +220,18 @@ router.post('/reviews', authJwtController.isAuthenticated, function(req,res)
         review.movieID = 'req.body.movieID';
          */
 
-        Review.lookup("movies", "movieID", "_id_", "movie");
-        Review.lookup("users", "reviewerID", "_id_", "user");
+        Review.aggregrate([{$lookup: {
+                from: 'movies',
+                localField: 'movieID',
+                foreignField: '_id_',
+                as: 'movie'
+            }}]);
+        Review.aggregrate([{$lookup: {
+                from: 'users',
+                localField: 'reviewerID',
+                foreignField: '_id_',
+                as: 'user'
+            }}]);
         review.comment = req.body.comment;
         review.rating = req.body.rating;
 
