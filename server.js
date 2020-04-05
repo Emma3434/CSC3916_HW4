@@ -9,7 +9,6 @@ var Review = require('./Reviews');
 var jwt = require('jsonwebtoken');
 var cors = require('cors');
 
-import static com.mongodb.client.model.Aggregates.lookup;
 
 var app = express();
 module.exports = app; // for testing
@@ -221,8 +220,8 @@ router.post('/reviews', authJwtController.isAuthenticated, function(req,res)
         review.movieID = 'req.body.movieID';
          */
 
-        Review.asList(lookup("movies", "movieID", "_id_", "movie"));
-        Review.asList(lookup("users", "reviewerID", "_id_", "user"));
+        Review.lookup("movies", "movieID", "_id_", "movie");
+        Review.lookup("users", "reviewerID", "_id_", "user");
         review.comment = req.body.comment;
         review.rating = req.body.rating;
 
