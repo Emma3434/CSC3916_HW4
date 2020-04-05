@@ -10,11 +10,11 @@ mongoose.set('useCreateIndex', true);
 
 // review schema
 var ReviewSchema = new Schema({
-    reviewerID: { type: String, required: true },
+    reviewerID: String,
+    movieID: String,
     comment: { type: String, required: true },
     rating: { type: Number, required: true }
 });
-
 
 // return the model
 module.exports = mongoose.model('Review', ReviewSchema);

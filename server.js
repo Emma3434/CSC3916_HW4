@@ -142,6 +142,7 @@ router.post('/signin', function(req, res) {
     });
 });
 
+// movies routes
 router.get('/movies', authJwtController.isAuthenticated, function(req,res)
 {
     res.send({status: 200, msg: 'Get movies',headers: {headers: req.headers}, query: req.query})
@@ -189,5 +190,36 @@ router.delete('/movies', authJwtController.isAuthenticated, function(req,res)
     res.send({status: 200, msg: 'movie deleted',headers: {headers: req.headers}, query: req.query})
 });
 
+// reviews routes
+router.get('/movies', authJwtController.isAuthenticated, function(req,res)
+{
+    if (req.body.review === true)
+    {
+        res.send({status: 200, msg: 'Get movies',headers: {headers: req.headers}, query: req.query})
+    }
+});
+router.post('/reviews', authJwtController.isAuthenticated, function(req,res)
+{
+    if (!req.body.comment||!req.body.rating) {
+        res.json({success: false, message: 'Please enter ALL the necessary fields: comment and rating.'});
+    }
+    else {
+        var review = new Review();
+
+        review.reviewerID = req.body.userID;
+        review.movieID = req.body.movieID;
+        review.comment = req.body.comment;
+        review.rating = req.body.rating;
+
+        // save the review
+        review.save(function(err) {
+            if (err) {
+                    return res.send(err);
+            }
+
+            res.json({ success: true, message: 'review created!', movie: movie, review: review });
+        });
+    }
+});
 app.use('/', router);
 app.listen(process.env.PORT || 8080);
