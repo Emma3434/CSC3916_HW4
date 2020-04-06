@@ -210,6 +210,7 @@ router.post('/reviews', authJwtController.isAuthenticated, function(req,res)
     else {
         var review = new Review();
 
+
         /*
         review.reviewerID = req.body.userID;
         review.movieID = req.body.movieID;
@@ -220,15 +221,15 @@ router.post('/reviews', authJwtController.isAuthenticated, function(req,res)
         review.movieID = 'req.body.movieID';
          */
 
-       DB.Review.aggregrate([{$lookup: {
+        /*DB.Review.aggregrate([{$lookup: {
                 from: 'movies',
                 localField: 'movieID',
                 foreignField: '_id_',
                 as: 'movie'
-            }}]);
+            }}]);*/
         DB.Review.aggregrate([{$lookup: {
                 from: 'users',
-                localField: 'reviewerID',
+                localField: 'username',
                 foreignField: '_id_',
                 as: 'user'
             }}]);
