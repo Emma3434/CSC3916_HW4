@@ -195,56 +195,29 @@ router.delete('/movies', authJwtController.isAuthenticated, function(req,res)
 });
 
 // reviews routes
-router.get('/reviews', authJwtController.isAuthenticated, function(req,res)
+router.route('/movies')
+    .get('/movies', authJwtController.isAuthenticated, function(req,res)
 {
-    if (req.body.review === true)
-    {
-        res.send({status: 200, msg: 'Get movies',headers: {headers: req.headers}, query: req.query})
-    }
+    Movie.aggregate([{
+        $lookup:{
+            from: 'movies',
+            localField: 'title',
+            foreignField: 'title',
+            as: 'reviews'
+        }
+    }]).exec(function(err,movies){
+        if(err)res.send(err);
+        res.send(movies);
+    })
 });
-router.post('/reviews', authJwtController.isAuthenticated, function(req,res)
-{
-    if (!req.body.comment||!req.body.rating) {
+
+router.post('/reviews', authJwtController.isAuthenticated, function(req,res) {
+    if (!req.body.comment || !req.body.rating) {
         res.json({success: false, message: 'Please enter ALL the necessary fields: comment and rating.'});
-    }
-    else {
+    } else {
         var review = new Review();
-
-
-        /*
-        review.reviewerID = req.body.userID;
-        review.movieID = req.body.movieID;
-         */
-
-        /*
-        review.reviewerID = 'req.body.userID';
-        review.movieID = 'req.body.movieID';
-         */
-
-        /*DB.Review.aggregrate([{$lookup: {
-                from: 'movies',
-                localField: 'movieID',
-                foreignField: '_id_',
-                as: 'movie'
-            }}]);*/
-        DB.Review.aggregrate([{$lookup: {
-                from: 'users',
-                localField: 'username',
-                foreignField: '_id_',
-                as: 'user'
-            }}]);
-        review.comment = req.body.comment;
-        review.rating = req.body.rating;
-
-        // save the review
-        review.save(function(err) {
-            if (err) {
-                    return res.send(err);
-            }
-
-            res.json({ success: true, message: 'review created!', review: review });
-        });
     }
 });
+
 app.use('/', router);
 app.listen(process.env.PORT || 8080);

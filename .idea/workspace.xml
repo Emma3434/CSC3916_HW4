@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9ee19f9-cc16-478b-9ef6-92d5d45bbb3c" name="Default" comment="get">
+    <list default="true" id="d9ee19f9-cc16-478b-9ef6-92d5d45bbb3c" name="Default" comment="redme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/Reviews.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,8 +64,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.test" />
         <item itemvalue="Node.js.server.js" />
+        <item itemvalue="npm.test" />
       </list>
     </recent_temporary>
   </component>
@@ -103,48 +102,61 @@
       <workItem from="1586049292126" duration="3422000" />
       <workItem from="1586064759406" duration="2035000" />
       <workItem from="1586126341895" duration="3117000" />
-      <workItem from="1586192217619" duration="249000" />
+      <workItem from="1586192217619" duration="407000" />
+      <workItem from="1586558974734" duration="2066000" />
     </task>
+    <task id="LOCAL-00001" summary="redme">
+      <created>1586192570230</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586192570230</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="redme" />
+    <option name="LAST_COMMIT_MESSAGE" value="redme" />
   </component>
   <component name="WindowStateProjectService">
     <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585866284387">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1585866284387" />
-    <state x="207" y="0" key="CommitChangelistDialog2" timestamp="1586192539869">
+    <state x="207" y="0" key="CommitChangelistDialog2" timestamp="1586560112259">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="207" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1586192539869" />
+    <state x="207" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1586560112259" />
     <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1586067946886">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586067946886" />
-    <state width="1260" height="109" key="GridCell.Tab.0.bottom" timestamp="1585873191157">
+    <state width="1260" height="31" key="GridCell.Tab.0.bottom" timestamp="1586560211760">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="109" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585873191157" />
+    <state width="1260" height="31" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586560211760" />
     <state width="1259" height="223" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1583367584852" />
     <state width="1659" height="230" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1583365605028" />
-    <state width="1260" height="109" key="GridCell.Tab.0.center" timestamp="1585873191157">
+    <state width="1260" height="31" key="GridCell.Tab.0.center" timestamp="1586560211760">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="109" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585873191157" />
+    <state width="1260" height="31" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586560211760" />
     <state width="1259" height="223" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1583367584851" />
     <state width="1659" height="230" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1583365605027" />
-    <state width="1260" height="109" key="GridCell.Tab.0.left" timestamp="1585873191157">
+    <state width="1260" height="31" key="GridCell.Tab.0.left" timestamp="1586560211759">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="109" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585873191157" />
+    <state width="1260" height="31" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586560211759" />
     <state width="1259" height="223" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1583367584851" />
     <state width="1659" height="230" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1583365605026" />
-    <state width="1260" height="109" key="GridCell.Tab.0.right" timestamp="1585873191157">
+    <state width="1260" height="31" key="GridCell.Tab.0.right" timestamp="1586560211760">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="109" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585873191157" />
+    <state width="1260" height="31" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586560211760" />
     <state width="1259" height="223" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1583367584852" />
     <state width="1659" height="230" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1583365605027" />
   </component>
