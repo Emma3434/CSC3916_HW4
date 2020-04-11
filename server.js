@@ -195,6 +195,7 @@ router.delete('/movies', authJwtController.isAuthenticated, function(req,res)
 });
 
 // reviews routes
+/*
 router.route('/movies')
     .get('/movies', authJwtController.isAuthenticated, function(req,res)
 {
@@ -218,6 +219,7 @@ router.post('/reviews', authJwtController.isAuthenticated, function(req,res) {
         var review = new Review();
     }
 });
+*/
 
 app.use('/', router);
 app.listen(process.env.PORT || 8080);
