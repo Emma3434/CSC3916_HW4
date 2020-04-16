@@ -188,7 +188,7 @@ router.route('/movies')
                 }
                 else
                 {
-                    res.json({siccess: true, movie: movie})
+                    res.json({success: true, movie: movie})
                 }
             })
         }
