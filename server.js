@@ -297,7 +297,7 @@ router.route('/reviews')
     .get(authJwtController.isAuthenticated, function (req, res){
         if (req.query.reviews === 'true')
         {
-            Movie.findOne({Title: req.body.title}).select('title').exec(function (err, movie){
+            Movie.findOne({title: req.body.title}).select('title').exec(function (err, movie){
                 if (err) res.send(err);
                 if (movie)
                 {
