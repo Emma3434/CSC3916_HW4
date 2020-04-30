@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d9ee19f9-cc16-478b-9ef6-92d5d45bbb3c" name="Default" comment="redme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/Movies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/Reviews.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.14.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Homework 2/CSC3916_HW2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -104,7 +106,10 @@
       <workItem from="1586126341895" duration="3117000" />
       <workItem from="1586192217619" duration="407000" />
       <workItem from="1586558974734" duration="5382000" />
-      <workItem from="1586925428820" duration="10199000" />
+      <workItem from="1586925428820" duration="10276000" />
+      <workItem from="1587166621453" duration="53000" />
+      <workItem from="1588175511459" duration="1232000" />
+      <workItem from="1588224539532" duration="1987000" />
     </task>
     <task id="LOCAL-00001" summary="redme">
       <created>1586192570230</created>
@@ -136,28 +141,28 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586067946886" />
-    <state width="1260" height="31" key="GridCell.Tab.0.bottom" timestamp="1586578472471">
+    <state width="1260" height="65" key="GridCell.Tab.0.bottom" timestamp="1587006652594">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="31" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586578472471" />
+    <state width="1260" height="65" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587006652594" />
     <state width="1259" height="223" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1583367584852" />
     <state width="1659" height="230" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1583365605028" />
-    <state width="1260" height="31" key="GridCell.Tab.0.center" timestamp="1586578472471">
+    <state width="1260" height="65" key="GridCell.Tab.0.center" timestamp="1587006652594">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="31" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586578472471" />
+    <state width="1260" height="65" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587006652594" />
     <state width="1259" height="223" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1583367584851" />
     <state width="1659" height="230" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1583365605027" />
-    <state width="1260" height="31" key="GridCell.Tab.0.left" timestamp="1586578472471">
+    <state width="1260" height="65" key="GridCell.Tab.0.left" timestamp="1587006652594">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="31" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586578472471" />
+    <state width="1260" height="65" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587006652594" />
     <state width="1259" height="223" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1583367584851" />
     <state width="1659" height="230" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1583365605026" />
-    <state width="1260" height="31" key="GridCell.Tab.0.right" timestamp="1586578472471">
+    <state width="1260" height="65" key="GridCell.Tab.0.right" timestamp="1587006652594">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1260" height="31" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586578472471" />
+    <state width="1260" height="65" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587006652594" />
     <state width="1259" height="223" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1583367584852" />
     <state width="1659" height="230" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1583365605027" />
     <state x="624" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1586989789958">
@@ -171,7 +176,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server.js</url>
           <line>177</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

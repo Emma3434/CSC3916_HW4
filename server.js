@@ -314,6 +314,15 @@ router.route('/reviews')
                             $match:{
                                 "title": req.body.title
                             }
+                        },
+                        {
+                            $group: {
+                                _id:null,
+                                pop:
+                                    {
+                                        $avg:"rating"
+                                    }
+                            }
                         }
                     ]).exec(function (err, movieReview){
                         if (err) res.send(err);
