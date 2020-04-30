@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d9ee19f9-cc16-478b-9ef6-92d5d45bbb3c" name="Default" comment="redme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/Movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/Reviews.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +107,7 @@
       <workItem from="1586925428820" duration="10276000" />
       <workItem from="1587166621453" duration="53000" />
       <workItem from="1588175511459" duration="1232000" />
-      <workItem from="1588224539532" duration="1987000" />
+      <workItem from="1588224539532" duration="2770000" />
     </task>
     <task id="LOCAL-00001" summary="redme">
       <created>1586192570230</created>
@@ -177,6 +175,30 @@
           <url>file://$PROJECT_DIR$/server.js</url>
           <line>177</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server.js</url>
+          <line>323</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server.js</url>
+          <line>320</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server.js</url>
+          <line>319</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server.js</url>
+          <line>232</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

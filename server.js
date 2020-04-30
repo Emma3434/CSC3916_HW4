@@ -230,6 +230,7 @@ router.route('/movies')
             movie.actors.Actor2.CharacterName = req.body.cname2;
             movie.actors.Actor3.ActorName = req.body.name3;
             movie.actors.Actor3.CharacterName = req.body.cname3;
+            movie.imageURL = req.body.imageURL;
 
             // save the movie
             movie.save(function(err) {
