@@ -14,13 +14,15 @@ var MovieSchema = new Schema({
     year_released: {type: String, required: true},
     genre: {type: String, required: true},
     actors:{
-        type: Array, required: true
-        /*
-        Actor1:{ActorName: {type: String, required: true}, CharacterName: {type: String, required: true}},
-        Actor2:{ActorName: {type: String, required: true}, CharacterName: {type: String, required: true}},
-        Actor3:{ActorName: {type: String, required: true}, CharacterName: {type: String, required: true}}*/
+        type: Array,
+        required: true,
+        items: {
+            actorName: String,
+            characterName: String
+        },
+        minItems: 3
     },
-    imageURL: {type: String},
+    imageUrl: {type: String},
     averageRating: {type: Number}
 });
 
