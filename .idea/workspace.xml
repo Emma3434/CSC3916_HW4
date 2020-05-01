@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d9ee19f9-cc16-478b-9ef6-92d5d45bbb3c" name="Default" comment="redme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,10 +136,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="207" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1586560112259" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1588302987457">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1588357801022">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1588302987457" />
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1588357801022" />
     <state width="1260" height="65" key="GridCell.Tab.0.bottom" timestamp="1587006652594">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -173,7 +174,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/server.js</url>
-          <line>294</line>
+          <line>257</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>

@@ -146,17 +146,17 @@ router.route('/movies/:movieId')
                                 localField: 'title',
                                 foreignField: 'title',
                                 as: 'reviews'
-                            },
-                        },
-                    {
-                        $match:{
-                            "title": req.body.title
-                        }
-                    }
+                            }
+                        }/*,
+                        {
+                            $match:{
+                                "title": req.body.title
+                            }
+                        }*/
                     ], function (err, idMovie)
                     {
                         if (err) res.send(err);
-                        else res.json(idMovie);
+                        else res.json({success: true, movie: idMovie})
                     }
                 );
                 } else res.json (movie);
@@ -182,54 +182,6 @@ router.route('/movies/:movieId')
     })
 
 router.route('/movies')
-    /*.get(authJwtController.isAuthenticated, function (req, res) {
-        Movie.findOne({title: req.body.title}, function (err, movie) {
-            if (err) res.send(err);
-            if (!movie)
-            {
-                res.json({success: false, message:"Cannot find the movie."});
-            }
-            else {
-                if (req.query.reviews === 'true') {
-                    Movie.aggregate([
-                        {
-                            $lookup: {
-                                from: 'reviews',
-                                localField: 'title',
-                                foreignField: 'title',
-                                as: 'reviews'
-                            },
-                        },
-                        {
-                            $match:{
-                                "title": req.body.title
-                            }
-                        },
-                        {
-                            $project: {
-                                title: 1,
-                                actors: 2,
-                                yearReleased: 3,
-                                genre: 4,
-                                imageUrl: 5,
-                                averageRating: {$avg: "$reviews.rating"},
-                                reviews: '$reviews'
-                            }
-                        },
-                        {
-                            $sort: {
-                                averageRating: -1
-                            }
-                        }
-                    ]).exec(function (err, movieReview) {
-                        if (err) res.send(err);
-                        res.json({success: true, movie: movieReview})
-                    })
-                } else res.json({success: true, movie: movie})
-            }
-        })
-    })*/
-
     // Get all of the movies
     .get(authJwtController.isAuthenticated, function (req, res) {
         if (req.query.reviews === 'true') {
@@ -240,7 +192,7 @@ router.route('/movies')
                         localField: 'title',
                         foreignField: 'title',
                         as: 'reviews'
-                    },
+                    }
                 },
                 {
                     $project: {
@@ -262,7 +214,14 @@ router.route('/movies')
                 if (err) res.send(err);
                 res.json({success: true, movie: movieReview})
             })
-        } else res.json({success: true, movie: movie})
+        } else
+        {
+            Movie.find(function (err, movies) {
+                if (err) res.send(err);
+                // return the movies
+                res.json({success: true, movie: movies})
+            });
+        }
     })
 
     .delete(authJwtController.isAuthenticated, function(req,res)
