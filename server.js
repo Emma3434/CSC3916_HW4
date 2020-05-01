@@ -135,7 +135,7 @@ router.route('/movies/:movieId')
                         }
                     ]).exec(function (err, movieidReview) {
                         if (err) res.send(err);
-                        res.json(movieidReview)
+                        res.json(movieidReview);
                     })
                 );
                 } else res.json (movie);
@@ -191,14 +191,14 @@ router.route('/movies')
                 }
             ]).exec(function (err, movieReview) {
                 if (err) res.send(err);
-                res.json(movieReview)
+                res.json(movieReview);
             })
         } else
         {
             Movie.find(function (err, movies) {
                 if (err) res.send(err);
                 // return the movies
-                res.json(movies)
+                res.json(movies);
             });
         }
     })
