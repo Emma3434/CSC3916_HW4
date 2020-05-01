@@ -285,8 +285,7 @@ router.route('/movies')
 
     .post(authJwtController.isAuthenticated, function(req,res)
     {
-        if (!req.body.title||!req.body.year_released||!req.body.genre||!req.body.name1||!req.body.cname1
-            ||!req.body.name2||!req.body.cname2||!req.body.name3||!req.body.cname3) {
+        if (!req.body.title||!req.body.year_released||!req.body.genre||!req.body.actors) {
             res.json({success: false, message: 'Please enter ALL the necessary fields: title, year released, genre, actor name 1,' +
                     'character name 1, actor name 2, character name 2, actor name 3, character name 3.'});
         }
