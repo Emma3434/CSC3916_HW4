@@ -172,6 +172,15 @@ router.route('/movies')
                     $match:{
                         "title": req.body.title
                     }
+                },
+                {
+                    $group: {
+                        _id:null,
+                        pop:
+                            {
+                                $avg:"rating"
+                            }
+                    }
                 }
             ]).exec(function(err,movieReview) {
                 if (err) res.send(err);
@@ -180,7 +189,7 @@ router.route('/movies')
         }
         else
         {
-            Movie.find(function(err,movie) {
+            Movie.findOne({title: req.body.title}, function (err, movie) {
                 if (err) res.send(err);
                 if (!movie)
                 {
