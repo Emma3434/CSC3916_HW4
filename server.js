@@ -52,32 +52,6 @@ router.route('/users')
         });
     });
 
-
-
-/*
-//reviews test
-router.route('/reviews/:reviewId')
-    .get(authJwtController.isAuthenticated, function (req, res) {
-        var id = req.params.reviewId;
-        Review.findById(id, function(err, review) {
-            if (err) res.send(err);
-
-            var reviewJson = JSON.stringify(review);
-            // return that review
-            res.json(review);
-        });
-    });
-
-router.route('/reviews')
-    .get(authJwtController.isAuthenticated, function (req, res) {
-        Review.find(function (err, reviews) {
-            if (err) res.send(err);
-            // return the reviews
-            res.json(reviews);
-        });
-    });
-*/
-
 router.post('/signup', function(req, res) {
     if (!req.body.username || !req.body.password) {
         res.json({success: false, message: 'Please pass username and password.'});
@@ -147,17 +121,23 @@ router.route('/movies/:movieId')
                                 foreignField: 'title',
                                 as: 'reviews'
                             }
-                        }/*,
+                        },
                         {
-                            $match:{
-                                "title": req.body.title
+                            $project: {
+                                title: 1,
+                                actors: 2,
+                                year_released: 3,
+                                genre: 4,
+                                imageUrl: 5,
+                                averageRating: {$avg: "$reviews.rating"},
+                                reviews: '$reviews'
                             }
-                        }*/
-                    ], function (err, idMovie)
+                        }
+                    ], exec(function (err, idMovie)
                     {
                         if (err) res.send(err);
-                        else res.json({success: true, movie: idMovie})
-                    }
+                        res.json({success: true, movie: idMovie})
+                    })
                 );
                 } else res.json (movie);
             }
