@@ -159,7 +159,7 @@ router.route('/movies')
     .get(authJwtController.isAuthenticated, function (req, res) {
         if (req.query.reviews === 'true')
         {
-            Movie.findOne({title: req.body.title}).select('title').exec(function (err, movie){
+            Movie.find(function (err, movie){
                 if (err) res.send(err);
                 if (movie)
                 {
@@ -184,8 +184,8 @@ router.route('/movies')
                                 yearReleased:3,
                                 genre:4,
                                 imageUrl:5,
-                                reviews:'$reviews',
-                                averageRating: {$avg: "$reviews.rating"}
+                                averageRating: {$avg: "$reviews.rating"},
+                                reviews:'$reviews'
                             }
                         },
                         {
