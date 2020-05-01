@@ -170,25 +170,25 @@ router.route('/movies')
                                 localField: 'title',
                                 foreignField: 'title',
                                 as: 'reviews'
-                            },
+                            }
                         },
                         {
                             $match:{
                                 "title": req.body.title
                             }
                         },
-                        /*
                         {
-                            $group: {
-                                _id:null,
-                                pop:
-                                    {
-                                        $avg:"rating"
-                                    }
-                            }
-                        }*/
-                    ]).exec(function (err, movieReview){
+                            $sort:{
+                                reviews: -1
+                                }
+                        }
+                    ]
+                    ).exec(function (err, movieReview){
                         if (err) res.send(err);
+                        var movieFound = new Movie();
+                        movieFound = movieReview;
+                        movieFound.rating = movieReview
+
                         res.json({success: true, movie: movieReview})
                     })
                 }
@@ -337,15 +337,15 @@ router.route('/reviews')
                                 "title": req.body.title
                             }
                         },
-                        {
+                        /*{
                             $group: {
                                 _id:null,
                                 pop:
                                     {
-                                        $avg:"rating"
+                                        $avg: "reviews.rating"
                                     }
                             }
-                        }
+                        }*/
                     ]).exec(function (err, movieReview){
                         if (err) res.send(err);
                         res.json({success: true, movie: movieReview})
