@@ -1,14 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d9ee19f9-cc16-478b-9ef6-92d5d45bbb3c" name="Default" comment="redme">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-    </list>
+    <list default="true" id="d9ee19f9-cc16-478b-9ef6-92d5d45bbb3c" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/review.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/movie.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="132" column="33" lean-forward="true" selection-start-line="132" selection-start-column="33" selection-end-line="132" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Users.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="31" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/users.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auth_jwt.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="10" selection-start-column="10" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -17,36 +108,96 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>User</find>
+      <find>require</find>
+      <find>db</find>
+      <find>save</find>
+      <find>status</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1YgXQaZjJ4NS3FDzgrCzkjn1uKY" />
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/auth.js" />
+        <option value="$PROJECT_DIR$/db.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/test/users.js" />
+        <option value="$PROJECT_DIR$/auth_jwt.js" />
+        <option value="$PROJECT_DIR$/Users.js" />
+        <option value="$PROJECT_DIR$/review.js" />
+        <option value="$PROJECT_DIR$/movie.js" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/server.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="1107" />
+    <option name="height" value="1047" />
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
-    <option name="showLibraryContents" value="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CSCI3916_HW4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CSCI3916_HW4" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="12.14.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.15.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CSCI3916_HW5" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ktpra\Documents\GitHub\CSCI3916_HW4" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\大学\大四下\CSCI 3916-001 Web API\Homework\Homework 4\CSC_3916HW4" />
-      <recent name="D:\大学\大四下\CSCI 3916-001 Web API\Homework\Homework 3\CSC3916_HW3" />
       <recent name="$PROJECT_DIR$" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Node.js.server.js">
     <configuration name="server.js" type="NodeJSConfigurationType" temporary="true" node-parameters="-r dotenv/config" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
@@ -62,24 +213,25 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="test\users.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST_FILE</test-kind>
+      <test-file>$PROJECT_DIR$/test/users.js</test-file>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.server.js" />
+        <item itemvalue="Mocha.test\users.js" />
         <item itemvalue="npm.test" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -96,111 +248,174 @@
       <workItem from="1519100227121" duration="592000" />
       <workItem from="1520305657875" duration="2469000" />
       <workItem from="1520308174902" duration="3305000" />
-      <workItem from="1551740823482" duration="7355000" />
-      <workItem from="1552144308160" duration="1000" />
-      <workItem from="1583365197285" duration="2397000" />
-      <workItem from="1586049292126" duration="3422000" />
-      <workItem from="1586064759406" duration="2035000" />
-      <workItem from="1586126341895" duration="3117000" />
-      <workItem from="1586192217619" duration="407000" />
-      <workItem from="1586558974734" duration="5382000" />
-      <workItem from="1586925428820" duration="10276000" />
-      <workItem from="1587166621453" duration="53000" />
-      <workItem from="1588175511459" duration="1232000" />
-      <workItem from="1588224539532" duration="3085000" />
+      <workItem from="1551740823482" duration="6733000" />
+      <workItem from="1552594008235" duration="17856000" />
+      <workItem from="1552785163125" duration="26897000" />
+      <workItem from="1552855582246" duration="1711000" />
+      <workItem from="1554663684262" duration="15354000" />
+      <workItem from="1555367267878" duration="325000" />
+      <workItem from="1555370090962" duration="67000" />
+      <workItem from="1555911859701" duration="1462000" />
+      <workItem from="1555952992422" duration="8042000" />
+      <workItem from="1555993960674" duration="4971000" />
     </task>
-    <task id="LOCAL-00001" summary="redme">
-      <created>1586192570230</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1586192570230</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="test_users_js - 2019.03.14 at 17h 30m 57s.xml">
+      <configuration name="test\users.js" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test_users_js - 2019.03.16 at 01h 22m 34s.xml">
+      <configuration name="test\users.js" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test_users_js - 2019.03.16 at 01h 23m 41s.xml">
+      <configuration name="test\users.js" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test_users_js - 2019.04.07 at 13h 49m 38s.xml">
+      <configuration name="test\users.js" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test_users_js - 2019.04.22 at 16h 26m 06s.xml">
+      <configuration name="test\users.js" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="105450000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="0" width="1107" height="1047" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7866521" visible="true" weight="0.2563143" />
+      <window_info id="Structure" order="1" weight="0.24960254" />
+      <window_info id="npm" order="2" sideWeight="0.21334793" side_tool="true" visible="true" weight="0.2563143" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.18818381" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.26842684" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.28169015" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4972973" visible="true" weight="0.2857143" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="npm" order="2" sideWeight="0.5027027" side_tool="true" visible="true" weight="0.2857143" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39144737" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.26842684" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2839879" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="redme" />
-    <option name="LAST_COMMIT_MESSAGE" value="redme" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585866284387">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1585866284387" />
-    <state x="207" y="0" key="CommitChangelistDialog2" timestamp="1586560112259">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="207" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1586560112259" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1586067946886">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586067946886" />
-    <state width="1260" height="65" key="GridCell.Tab.0.bottom" timestamp="1587006652594">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1260" height="65" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587006652594" />
-    <state width="1259" height="223" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1583367584852" />
-    <state width="1659" height="230" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1583365605028" />
-    <state width="1260" height="65" key="GridCell.Tab.0.center" timestamp="1587006652594">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1260" height="65" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587006652594" />
-    <state width="1259" height="223" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1583367584851" />
-    <state width="1659" height="230" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1583365605027" />
-    <state width="1260" height="65" key="GridCell.Tab.0.left" timestamp="1587006652594">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1260" height="65" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587006652594" />
-    <state width="1259" height="223" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1583367584851" />
-    <state width="1659" height="230" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1583365605026" />
-    <state width="1260" height="65" key="GridCell.Tab.0.right" timestamp="1587006652594">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1260" height="65" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587006652594" />
-    <state width="1259" height="223" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1583367584852" />
-    <state width="1659" height="230" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1583365605027" />
-    <state x="624" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1586989789958">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="624" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1586989789958" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server.js</url>
-          <line>186</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server.js</url>
-          <line>332</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server.js</url>
-          <line>329</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server.js</url>
-          <line>328</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server.js</url>
-          <line>241</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/db.js" />
+    <entry file="file://$PROJECT_DIR$/auth.js" />
+    <entry file="file://$PROJECT_DIR$/.idea/echo.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/10.15.1/core-modules/net.js" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth_jwt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/movie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/review.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="132" column="33" lean-forward="true" selection-start-line="132" selection-start-column="33" selection-end-line="132" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
