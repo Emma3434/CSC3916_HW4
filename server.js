@@ -179,7 +179,7 @@ router.route('/movies')
                         },
                         {
                             $sort:{
-                                reviews: -1
+                                rating: -1
                                 }
                         }
                     ]
