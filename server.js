@@ -239,15 +239,10 @@ router.route('/movies')
                     },
                 },
                 {
-                    $match:{
-                        "title": req.body.title
-                    }
-                },
-                {
                     $project: {
                         title: 1,
                         actors: 2,
-                        yearReleased: 3,
+                        year_released: 3,
                         genre: 4,
                         imageUrl: 5,
                         averageRating: {$avg: "$reviews.rating"},
