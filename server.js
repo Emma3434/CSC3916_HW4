@@ -178,7 +178,7 @@ router.route('/movies/:movieId')
     })
 
 router.route('/movies')
-    .get(authJwtController.isAuthenticated, function (req, res) {
+    /*.get(authJwtController.isAuthenticated, function (req, res) {
         Movie.findOne({title: req.body.title}, function (err, movie) {
             if (err) res.send(err);
             if (!movie)
@@ -196,11 +196,11 @@ router.route('/movies')
                                 as: 'reviews'
                             },
                         },
-                        /*{
+                        {
                             $match:{
                                 "title": req.body.title
                             }
-                        },*/
+                        },
                         {
                             $project: {
                                 title: 1,
@@ -224,8 +224,9 @@ router.route('/movies')
                 } else res.json({success: true, movie: movie})
             }
         })
-    })
-    /*
+    })*/
+
+    // Get all of the movies
     .get(authJwtController.isAuthenticated, function (req, res) {
         if (req.query.reviews === 'true') {
             Movie.aggregate([
@@ -263,7 +264,7 @@ router.route('/movies')
                 res.json({success: true, movie: movieReview})
             })
         } else res.json({success: true, movie: movie})
-    })*/
+    })
 
     .delete(authJwtController.isAuthenticated, function(req,res)
     {
@@ -312,7 +313,7 @@ router.route('/movies')
                     res.json({ success: true, message: 'Movie created!', movie: movie });
                 }
             });
-        
+
     });
 
 // reviews routes
@@ -383,15 +384,6 @@ router.route('/reviews')
                                 "title": req.body.title
                             }
                         },
-                        /*{
-                            $group: {
-                                _id:null,
-                                pop:
-                                    {
-                                        $avg: "reviews.rating"
-                                    }
-                            }
-                        }*/
                     ]).exec(function (err, movieReview){
                         if (err) res.send(err);
                         res.json({success: true, movie: movieReview})
