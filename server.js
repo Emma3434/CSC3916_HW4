@@ -219,6 +219,7 @@ router.route('/movies')
                         "title": req.body.title
                     }
                 },
+                /*
                 {
                     $project: {
                         title: 1,
@@ -234,7 +235,7 @@ router.route('/movies')
                     $sort: {
                         averageRating: -1
                     }
-                }
+                }*/
             ]).exec(function(err,movieReview) {
                 if (err) res.send(err);
                 res.json({success: true, movie: movieReview})
