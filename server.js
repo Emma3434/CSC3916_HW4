@@ -157,6 +157,97 @@ router.route('/movies/:movieId')
 
 router.route('/movies')
     .get(authJwtController.isAuthenticated, function (req, res) {
+        if (req.body.title != null)
+        {
+            Movie.findOne({title: req.body.title}, function (err, movie) {
+                if (err) res.send(err);
+                if (!movie)
+                {
+                    res.json({success: false, message:"Cannot find the movie."});
+                }
+                else {
+                    if (req.query.reviews === 'true') {
+                        Movie.aggregate([
+                            {
+                                $lookup: {
+                                    from: 'reviews',
+                                    localField: 'title',
+                                    foreignField: 'title',
+                                    as: 'reviews'
+                                },
+                            },
+                            /*{
+                                $match:{
+                                    "title": req.body.title
+                                }
+                            },*/
+                            {
+                                $project: {
+                                    title: 1,
+                                    actors: 2,
+                                    yearReleased: 3,
+                                    genre: 4,
+                                    imageUrl: 5,
+                                    averageRating: {$avg: "$reviews.rating"},
+                                    reviews: '$reviews'
+                                }
+                            },
+                            {
+                                $sort: {
+                                    averageRating: -1
+                                }
+                            }
+                        ]).exec(function (err, movieReview) {
+                            if (err) res.send(err);
+                            res.json({success: true, movie: movieReview})
+                        })
+                    } else res.json({success: true, movie: movie})
+                }
+            })
+
+        }
+        else {
+            if (req.query.reviews === 'true') {
+                Movie.aggregate([
+                    {
+                        $lookup: {
+                            from: 'reviews',
+                            localField: 'title',
+                            foreignField: 'title',
+                            as: 'reviews'
+                        },
+                    },
+                    /*{
+                        $match:{
+                            "title": req.body.title
+                        }
+                    },*/
+                    {
+                        $project: {
+                            title: 1,
+                            actors: 2,
+                            yearReleased: 3,
+                            genre: 4,
+                            imageUrl: 5,
+                            averageRating: {$avg: "$reviews.rating"},
+                            reviews: '$reviews'
+                        }
+                    },
+                    {
+                        $sort: {
+                            averageRating: -1
+                        }
+                    }
+                ]).exec(function (err, movieReview) {
+                    if (err) res.send(err);
+                    res.json({success: true, movie: movieReview})
+                })
+            } else res.json({success: true, movie: movie})
+        }
+
+
+
+        /*
         Movie.findOne({title: req.body.title}, function (err, movie) {
             if (err) res.send(err);
             if (!movie)
@@ -176,11 +267,11 @@ router.route('/movies')
                                 as: 'reviews'
                             },
                         },
-                        /*{
+                        {
                             $match:{
                                 "title": req.body.title
                             }
-                        },*/
+                        },
                         {
                             $project: {
                                 title: 1,
@@ -203,8 +294,7 @@ router.route('/movies')
                     })
                 } else res.json({success: true, movie: movie})
             }
-        })
-
+        })*/
 
 
 
