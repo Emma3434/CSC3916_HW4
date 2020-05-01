@@ -205,6 +205,7 @@ router.route('/movies')
         }*/
         if (req.query.reviews === 'true')
         {
+            Movie.find(function (err, movies){
             Movie.aggregate([
                 {
                     $lookup:{
@@ -240,6 +241,7 @@ router.route('/movies')
                 if (err) res.send(err);
                 res.json({success: true, movie: movieReview})
             })
+        })
         }
         else
         {
