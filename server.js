@@ -179,7 +179,18 @@ router.route('/movies')
                         },
                         {
                             $project: {
-                                rating: {$avg: "$reviews.rating"}
+                                title: 1,
+                                actors: 2,
+                                yearReleased:3,
+                                genre:4,
+                                imageUrl:5,
+                                reviews:'$reviews',
+                                averageRating: {$avg: "$reviews.rating"}
+                            }
+                        },
+                        {
+                            $sort: {
+                                averageRating: -1
                             }
                         }
                     ]
