@@ -337,7 +337,6 @@ router.route('/reviews')
                                 "title": req.body.title
                             }
                         },
-                        /*
                         {
                             $group: {
                                 _id:null,
@@ -346,7 +345,7 @@ router.route('/reviews')
                                         $avg:"rating"
                                     }
                             }
-                        }*/
+                        }
                     ]).exec(function (err, movieReview){
                         if (err) res.send(err);
                         res.json({success: true, movie: movieReview})
