@@ -159,23 +159,43 @@ router.route('/movies')
     .get(authJwtController.isAuthenticated, function (req, res) {
         if (req.query.reviews === 'true')
         {
-            Movie.aggregate([
-                {
-                    $lookup:{
-                        from: 'reviews',
-                        localField: 'title',
-                        foreignField: 'title',
-                        as: 'reviews'
-                    },
-                },
-                {
-                    $match:{
-                        "title": req.body.title
-                    }
-                }
-            ]).exec(function(err,movieReview) {
+            Movie.findOne({title: req.body.title}).select('title').exec(function (err, movie){
                 if (err) res.send(err);
-                res.json({success: true, movie: movieReview})
+                if (movie)
+                {
+                    Movie.aggregate([
+                        {
+                            $lookup:{
+                                from: 'reviews',
+                                localField: 'title',
+                                foreignField: 'title',
+                                as: 'reviews'
+                            },
+                        },
+                        {
+                            $match:{
+                                "title": req.body.title
+                            }
+                        },
+                        /*
+                        {
+                            $group: {
+                                _id:null,
+                                pop:
+                                    {
+                                        $avg:"rating"
+                                    }
+                            }
+                        }*/
+                    ]).exec(function (err, movieReview){
+                        if (err) res.send(err);
+                        res.json({success: true, movie: movieReview})
+                    })
+                }
+                else
+                {
+                    res.status(400).json({success: false, message: "Cannot find this movie."})
+                }
             })
         }
         else
