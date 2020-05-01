@@ -203,7 +203,7 @@ router.route('/movies')
             }
         })
     })
-
+    /*
     .get(authJwtController.isAuthenticated, function (req, res) {
         if (req.query.reviews === 'true') {
             Movie.aggregate([
@@ -215,11 +215,11 @@ router.route('/movies')
                         as: 'reviews'
                     },
                 },
-                /*{
+                {
                     $match:{
                         "title": req.body.title
                     }
-                },*/
+                },
                 {
                     $project: {
                         title: 1,
@@ -241,7 +241,7 @@ router.route('/movies')
                 res.json({success: true, movie: movieReview})
             })
         } else res.json({success: true, movie: movie})
-    })
+    })*/
 
     .delete(authJwtController.isAuthenticated, function(req,res)
     {
