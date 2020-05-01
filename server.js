@@ -172,7 +172,7 @@ router.route('/movies')
                     $match:{
                         "title": req.body.title
                     }
-                },
+                }
             ]).exec(function(err,movieReview) {
                 if (err) res.send(err);
                 res.json({success: true, movie: movieReview})
@@ -283,7 +283,7 @@ router.route('/reviews')
                         if (err) res.send(err);
                         else
                         {
-                            
+
                             res.status(200).json({success: true, message: "Successfully saved the review.", review: review })
                         }
                     })
