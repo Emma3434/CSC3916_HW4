@@ -132,10 +132,6 @@ router.route('/movies/:movieId')
         var id = req.params.movieId;
         Movie.findById(id, function(err, movie) {
             if (err) res.send(err);
-            if (!movie)
-            {
-                res.json({success: false, message:"Cannot find the movie."});
-            }
             else
             {
                 if (req.query.reviews === 'true'){
@@ -147,7 +143,12 @@ router.route('/movies/:movieId')
                                 foreignField: 'title',
                                 as: 'reviews'
                             },
+                        },
+                    {
+                        $match:{
+                            "title": req.body.title
                         }
+                    }
                     ], function (err, idMovie)
                     {
                         if (err) res.send(err);
@@ -294,12 +295,7 @@ router.route('/movies')
             movie.title = req.body.title;
             movie.year_released = req.body.year_released;
             movie.genre = req.body.genre;
-            movie.actors.Actor1.ActorName = req.body.name1;
-            movie.actors.Actor1.CharacterName = req.body.cname1;
-            movie.actors.Actor2.ActorName = req.body.name2;
-            movie.actors.Actor2.CharacterName = req.body.cname2;
-            movie.actors.Actor3.ActorName = req.body.name3;
-            movie.actors.Actor3.CharacterName = req.body.cname3;
+            movie.actors = req.body.actors;
             movie.imageURL = req.body.imageURL;
 
             // save the movie
