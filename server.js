@@ -159,7 +159,6 @@ router.route('/movies')
     .get(authJwtController.isAuthenticated, function (req, res) {
         if (req.query.reviews === 'true')
         {
-            Movie.find(function (err, movie){
                 if (err) res.send(err);
                 if (movie)
                 {
@@ -207,7 +206,6 @@ router.route('/movies')
                 {
                     res.status(400).json({success: false, message: "Cannot find this movie."})
                 }
-            })
         }
         else
         {
