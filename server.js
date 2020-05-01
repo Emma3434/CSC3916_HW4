@@ -132,12 +132,34 @@ router.route('/movies/:movieId')
         var id = req.params.movieId;
         Movie.findById(id, function(err, movie) {
             if (err) res.send(err);
-
-            var movieJson = JSON.stringify(movie);
-            // return that movie
-            res.json(movie);
+            else
+            {
+                if (req.query.reviews === 'true'){
+                    Movie.aggregate([
+                        {
+                            $lookup: {
+                                from: 'reviews',
+                                localField: 'title',
+                                foreignField: 'title',
+                                as: 'reviews'
+                            },
+                        },
+                    {
+                        $match:{
+                            "title": req.body.title
+                        }
+                    }
+                    ], function (err, idMovie)
+                    {
+                        if (err) res.send(err);
+                        else res.json(idMovie);
+                    }
+                );
+                }
+            }
         });
     })
+
     .put(authJwtController.isAuthenticated, function (req, res){
         var id = req.params.movieID;
         Movie.findById(id, function(err, movie){
