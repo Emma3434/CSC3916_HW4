@@ -178,9 +178,9 @@ router.route('/movies')
                             }
                         },
                         {
-                            $sort:{
-                                rating: -1
-                                }
+                            $project: {
+                                rating: {$avg: "$reviews.rating"}
+                            }
                         }
                     ]
                     ).exec(function (err, movieReview){
