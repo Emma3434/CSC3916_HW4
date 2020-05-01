@@ -1,22 +1,37 @@
-// Load required packages
-var passport = require('passport');
-var JwtStrategy = require('passport-jwt').Strategy;
-var ExtractJwt = require('passport-jwt').ExtractJwt;
-var User = require('./Users');
+// === LOAD REQUIRED PACKAGES === //
+var passport        =  require( 'passport' );
+var JwtStrategy     =  require( 'passport-jwt' ).Strategy;
+var ExtractJwt      =  require( 'passport-jwt' ).ExtractJwt;
+var userController  =  require( './usercontroller' );
+require( 'dotenv' ).load( );
 
-var opts = {};
-opts.jwtFromRequest = ExtractJwt.fromAuthHeaderWithScheme("jwt");
-opts.secretOrKey = process.env.SECRET_KEY;
+// === PREPARE VARS FOR JWT STRATEGY === //
+var opts             =  { };
+opts.jwtFromRequest  =  ExtractJwt.fromAuthHeaderWithScheme( "jwt" );
+opts.secretOrKey     =  process.env.SECRET_KEY;
 
-passport.use(new JwtStrategy(opts, function(jwt_payload, done) {
-    User.findById(jwt_payload.id, function (err, user) {
-        if (user) {
-            done(null, user);
-        } else {
-            done(null, false);
-        }
-    });
-}));
+// === AUTHENTICATE USING JWT STRATEGY === //
+passport.use(
+	new JwtStrategy(
+		opts, 
+		function( jwt_payload , done ) 
+		{
+			// === ATTEMPT TO EXTRACT USER VIA TOKEN === //
+			userController.findUserById( jwt_payload )
+				.then(
+					function( user )
+					{
+						// === IF FOUND, AUTHENTICATE === //
+						if ( user )
+							done( null , user );
+						
+						// === OTHERWISE FAIL === //
+						else
+							done( null , false );
+					});
+		}
+	));
 
-exports.isAuthenticated = passport.authenticate('jwt', { session : false });
-exports.secret = opts.secretOrKey ;
+// === EXPORTS === //
+exports.isAuthenticated  =  passport.authenticate( 'jwt' , { session : false } );
+exports.secret           =  opts.secretOrKey ;
