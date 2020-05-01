@@ -173,15 +173,6 @@ router.route('/movies')
                         "title": req.body.title
                     }
                 },
-                {
-                    $group: {
-                        _id:null,
-                        pop:
-                            {
-                                $avg:"rating"
-                            }
-                    }
-                }
             ]).exec(function(err,movieReview) {
                 if (err) res.send(err);
                 res.json({success: true, movie: movieReview})
@@ -292,6 +283,7 @@ router.route('/reviews')
                         if (err) res.send(err);
                         else
                         {
+                            
                             res.status(200).json({success: true, message: "Successfully saved the review.", review: review })
                         }
                     })

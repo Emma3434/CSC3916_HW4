@@ -20,7 +20,6 @@ var MovieSchema = new Schema({
     },
     imageURL: {type: String},
     rating: {type: Number}
-
 });
 
 // return the model
