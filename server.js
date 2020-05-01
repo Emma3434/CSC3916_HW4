@@ -195,10 +195,6 @@ router.route('/movies')
                     ]
                     ).exec(function (err, movieReview){
                         if (err) res.send(err);
-                        var movieFound = new Movie();
-                        movieFound = movieReview;
-                        movieFound.rating = movieReview
-
                         res.json({success: true, movie: movieReview})
                     })
                 }
