@@ -191,7 +191,7 @@ router.route('/movies')
                 }
             ]).exec(function(err,movieReview) {
                 if (err) res.send(err);
-                res.json({success: true, movie: movieReview})
+                res.json({success: true, message: "Found movie with review", movie: movieReview})
             })
         }
         else
@@ -204,7 +204,7 @@ router.route('/movies')
                 }
                 else
                 {
-                    res.json({success: true, movie: movie})
+                    res.json({success: true, message: "Found this movie", movie: movie})
                 }
             })
         }
