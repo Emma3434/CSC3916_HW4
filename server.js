@@ -137,7 +137,6 @@ router.route('/movies/:movieId')
                         if (err) res.send(err);
                         res.json(movieidReview);
                     })
-                );
                 } else res.json (movie);
             }
         });
