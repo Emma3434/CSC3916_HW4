@@ -132,6 +132,10 @@ router.route('/movies/:movieId')
         var id = req.params.movieId;
         Movie.findById(id, function(err, movie) {
             if (err) res.send(err);
+            if (!movie)
+            {
+                res.json({success: false, message:"Cannot find the movie."});
+            }
             else
             {
                 if (req.query.reviews === 'true'){
