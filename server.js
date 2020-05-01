@@ -147,12 +147,7 @@ router.route('/movies/:movieId')
                                 foreignField: 'title',
                                 as: 'reviews'
                             },
-                        },
-                    {
-                        $match:{
-                            "title": req.body.title
                         }
-                    }
                     ], function (err, idMovie)
                     {
                         if (err) res.send(err);
